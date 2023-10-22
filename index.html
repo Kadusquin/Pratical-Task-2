@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html,Css,Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculador de Adição</h1>
+  <h2>Com essa calculadora voce conseguirá calcular uma soma apenas trocando os fatores</h2>
+ 
+  <div><p>Essa calculadora é feita a base de HTML,CSS,JAVASCRIPT</p>
+
+
+  <p>Abaixo você tem os espaços onde escreverá os números para ser somados<p/>
+
+
+    <p>Primeiro Número:<span id= "firstNum">3</span> <br></p>
+    <p>Segundo Número: <span id= "secondNum">5</span> </p>
+    <p>A soma dos números <span id= "answer">(placeholder for the answer)</span></p></div>
+    <input type="button" id="sumButton" value="Click to add!">
+    <img src="Calculadora-204x300.png" alt=""></p></body>
+</body>
+
+<script>
+function displaySum() {
+    let firstNum = Number(document.getElementById('firstNum').innerHTML)
+    let secondNum = Number(document.getElementById('secondNum').innerHTML)
+  
+    let total = firstNum + secondNum;
+    document.getElementById("answer").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
+  }
+  
+  document.getElementById('sumButton').addEventListener("click", displaySum);
+  
+  let firstNum = Number(document.getElementById('firstNum').innerHTML)
+  let secondNum = Number(document.getElementById('secondNum').innerHTML)
+
+  let total = firstNum + secondNum;
+  document.getElementById("answer").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
+  </script>
+</html>
